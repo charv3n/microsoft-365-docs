@@ -114,6 +114,26 @@ By default, structured and freeform document processing is turned off for all si
 
     c. Select **Save**.
 
+## Installing AI Builder for Project Cortex app in Dataverse
+
+By default, you will be using the default Power Platform environment. This will require the AI Builder for Project Cortex app. Here's what to do if you see the "AI Builder requires a Dataverse database..." error during model creation:
+
+Understanding the Error:
+
+This error indicates that the AI Builder for Project Cortex app needs to be enabled within your default Power Platform environment before you can start building models.
+Steps to Enable AI Builder:
+
+1. Power Platform Admin Access: Have a Power Platform Administrator access the Power Platform admin center at https://admin.powerplatform.microsoft.com/
+2. Navigate to Apps: Go to "Resources" and then "Dynamics 365 Apps".
+3. Locate and Install: Find the "AI Builder for Project Cortex" app and click to install it in the default environment.
+4. Wait: Allow a few minutes for the installation to complete.
+5. Retry Model Creation: Once installed, retry creating your new model. The error should no longer appear.
+
+###Important Notes:
+
+> It's normal to use the default Power Platform environment.
+> If you continue to have trouble after enabling AI Builder, it's best to contact Microsoft Support for further assistance.
+
 ## Using a custom Power Platform environment
 
 Your tenant will come with a default Power Platform environment. If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
